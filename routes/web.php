@@ -47,7 +47,7 @@ Route::get('/home/page', function () {
 });
 
 /**
- * Model binding
+ * Model b
  */
 
 Route::get('user/{user}',function(User $user){

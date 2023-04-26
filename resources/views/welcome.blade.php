@@ -34,6 +34,17 @@
                 {{-- naming routes for easzy refencing and passing route parameters--}}
                 <a href="{{route('home.page')}}"> Home Page</a>
                 <a href="{{route('home.page',['id'=>34, 'name'=>'Mose'])}}"> Home Page with ID</a>
+
+
+                <form action="{{route('tasks.store')}}" method="POST">
+                Name <input type="text" name="firstName" value="{{old('firstName')}}">
+                Last Name <input type="text" name="lastName" value="{{old('lastName')}}">
+                 <button type="submit">
+
+                    Save
+                 </button>
+                 @csrf
+                 </form>
             </div>
         </div>
     </body>
